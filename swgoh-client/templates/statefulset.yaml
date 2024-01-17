@@ -27,6 +27,7 @@ spec:
       containers:
       - name: {{ .Values.name }}
         image: {{ .Values.image -}}:{{ .Values.version }}
+        imagePullPolicy: Always
         volumeMounts:
           - name: data
             mountPath: /app/data
@@ -36,6 +37,7 @@ spec:
       initContainers:
       - name: {{ .Values.name }}-init
         image: {{ .Values.imageinit -}}:{{ .Values.versioninit }}
+        imagePullPolicy: Always
         volumeMounts:
           - name: data
             mountPath: /app/data
