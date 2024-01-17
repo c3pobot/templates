@@ -56,7 +56,7 @@
     "version",
     "image-init",
     "version-init",
-    "configMap",
+    "configMap"
   ],
   "title": "Values",
   "type": "object"
