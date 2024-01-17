@@ -34,7 +34,7 @@ spec:
           - configMapRef:
               name: {{ .Values.configMap }}
       initContainers:
-      - name: {{ .Values.name-init }}
+      - name: {{ .Values.name }}-init
         image: {{ .Values.image-init }}:{{ .Values.version-init }}
         volumeMounts:
           - name: data

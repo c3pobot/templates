@@ -20,9 +20,21 @@
       "description": "Main Container image version",
       "type": "string"
     },
+    "image-init": {
+      "description": "Init Container Image",
+      "type": "string"
+    },
+    "version-init": {
+      "description": "Init Container image version",
+      "type": "string"
+    },
     "service": {
       "description": "Does your application require a service",
       "type": "boolean"
+    },
+    "config map": {
+      "description": "ConfigMap name",
+      "type": "string"
     }
   },
   "order": [
