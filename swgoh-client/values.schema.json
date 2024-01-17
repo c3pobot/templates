@@ -10,8 +10,7 @@
     },
     "replicas": {
       "description": "Application replicas",
-      "type": "integer",
-      "default": 1
+      "type": "integer"
     },
     "image": {
       "description": "Main Container Image",
