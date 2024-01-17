@@ -20,11 +20,11 @@
       "description": "Main Container image version",
       "type": "string"
     },
-    "image-init": {
+    "imageinit": {
       "description": "Init Container Image",
       "type": "string"
     },
-    "version-init": {
+    "versioninit": {
       "description": "Init Container image version",
       "type": "string"
     },
@@ -43,8 +43,8 @@
     "replicas",
     "image",
     "version",
-    "image-init",
-    "version-init",
+    "imageinit",
+    "versioninit",
     "configMap",
     "service"
   ],

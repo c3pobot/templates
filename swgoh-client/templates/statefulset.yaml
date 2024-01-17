@@ -35,7 +35,7 @@ spec:
               name: {{ .Values.configMap }}
       initContainers:
       - name: {{ .Values.name }}-init
-        image: {{ .Values.image-init -}}:{{ .Values.version-init }}
+        image: {{ .Values.imageinit -}}:{{ .Values.versioninit }}
         volumeMounts:
           - name: data
             mountPath: /app/data
