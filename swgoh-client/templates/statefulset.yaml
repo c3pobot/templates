@@ -26,7 +26,7 @@ spec:
           emptyDir: {}
       containers:
       - name: {{ .Values.name }}
-        image: {{ .Values.image }}:{{ .Values.version }}
+        image: {{ .Values.image -}}:{{ .Values.version }}
         volumeMounts:
           - name: data
             mountPath: /app/data
@@ -35,7 +35,7 @@ spec:
               name: {{ .Values.configMap }}
       initContainers:
       - name: {{ .Values.name }}-init
-        image: {{ .Values.image-init }}:{{ .Values.version-init }}
+        image: {{ .Values.image-init -}}:{{ .Values.version-init }}
         volumeMounts:
           - name: data
             mountPath: /app/data
