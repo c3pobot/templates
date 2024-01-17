@@ -32,24 +32,31 @@
       "description": "Does your application require a service",
       "type": "boolean"
     },
-    "config map": {
+    "configMap": {
       "description": "ConfigMap name",
       "type": "string"
     }
   },
   "order": [
-    "name",
     "namespace",
+    "name",
     "replicas",
     "image",
     "version",
+    "image-init",
+    "version-init",
+    "configMap",
     "service"
   ],
   "required": [
+    "namespace",
     "name",
     "replicas",
     "image",
-    "version"
+    "version",
+    "image-init",
+    "version-init",
+    "configMap",
   ],
   "title": "Values",
   "type": "object"
