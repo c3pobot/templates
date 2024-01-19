@@ -21,6 +21,8 @@ spec:
         app: {{ .Values.name }}
     spec:
       terminationGracePeriodSeconds: 3
+      imagePullSecrets:
+        - name: gitlab-auth
       volumes:
         - name: data
           emptyDir: {}
